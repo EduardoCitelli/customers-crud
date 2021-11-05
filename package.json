@@ -8,9 +8,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ansi-regex": "^6.0.1",
+    "cz-conventional-changelog": "^3.3.0",
     "next": "12.0.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.19.0",
+    "swr": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "16.11.6",
