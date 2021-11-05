@@ -9,6 +9,7 @@ export const CustomersList = ({ customers }: Props) => {
     return (
         <>
             <Link href={`/customers/new`}>Add a customer ➕</Link>
+
             <div className={styles.grid}>
                 {customers.map((customer) => {
                     return (
@@ -16,9 +17,11 @@ export const CustomersList = ({ customers }: Props) => {
                             <h2>{customer.name}</h2>
                             <p>Type: {customer.type}</p>
                             <hr />
+
                             <Link href={`/customers/edit/${customer.id}`}>
                                 <a>Edit ✍</a>
                             </Link>
+
                             <button onClick={deleteOnClickHandler(customer)}>Delete 🗑</button>
                         </div>
                     );

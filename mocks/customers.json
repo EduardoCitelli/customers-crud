@@ -32,6 +32,11 @@
     {
         "id": "616c9911fc13ae150f00002i",
         "name": "Test 07",
-        "type": 2
+        "type": "1"
+    },
+    {
+        "id": "616c9911fc13ae150f00002j",
+        "name": "Prueba",
+        "type": "1"
     }
 ]

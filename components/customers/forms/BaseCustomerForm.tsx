@@ -30,15 +30,15 @@ export const BaseCustomerForm = ({
       style={{ display: "flex", flexDirection: "column" }}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <label htmlFor="model">Name</label>
+      <label htmlFor="name">Name</label>
       <input style={{ marginBottom: "1rem" }} {...register("name")} />
       
-      <label htmlFor="status">Type</label>
+      <label htmlFor="type">Type</label>
       <select style={{ marginBottom: "1rem" }} {...register("type")}>
         <option value="1">Builder</option>
         <option value="2">Private</option>
       </select>
-      
+
       {children}
     </form>
   );

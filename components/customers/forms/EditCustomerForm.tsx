@@ -11,6 +11,7 @@ type FormStatus = "Success" | "Error" | null;
 
 export const EditCustomerForm = ({ customer }: Props) => {
     const [status, setStatus] = useState<FormStatus>(() => null);
+    
     const onEditCustomerHandler: SubmitHandler<Omit<Customer, "id">> = async (
         data
     ) => {

@@ -5,7 +5,7 @@ import customers from "./../../../mocks/customers.json";
 const SingleCustomer: NextApiHandler = (request: NextApiRequest, response: NextApiResponse) => {
     switch (request.method) {
         case "GET":
-            const { customerId: customerId } = request.query;
+            const { customerId } = request.query;
 
             const customer = customers.find(({ id }: Customer) => id === customerId);
 
